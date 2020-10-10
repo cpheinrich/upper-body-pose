@@ -1,0 +1,4 @@
+memory: 2048M
+name: upper-body-pose
+cpu: "2"
+concurrency: "2"
