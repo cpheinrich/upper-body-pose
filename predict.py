@@ -15,7 +15,7 @@ VIDEO_SUFFIX = '_network_output.mp4'
 def is_input_video(path):
     name, ext = os.path.splitext(path)
     ext = ext.lower()
-    if ext in VIDEO_EXTENSIONS and VIDEO_SUFFIX not in name:
+    if ext in VIDEO_EXTENSIONS and VIDEO_SUFFIX not in path:
         return True
     else:
         return False
