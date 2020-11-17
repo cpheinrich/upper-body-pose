@@ -1,4 +1,3 @@
-from paqr.predictor import PredictorInterface
 import mediapipe as mp
 import cv2
 import time
@@ -6,7 +5,7 @@ import sys
 import pandas as pd
 
 
-class Predictor(PredictorInterface):
+class Predictor:
     def __init__(self):
         # Initialize your predictor
         self.pose_tracker = mp.examples.UpperBodyPoseTracker()
